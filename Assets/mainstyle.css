@@ -1,0 +1,188 @@
+html {
+    position: relative;
+    min-height: 100vh;
+    font-family: 'OpenSans' !important;
+}
+
+.text-blue{
+    color: #252E71;
+}
+.text-blue-light{
+    color: #2962ff;
+}
+.text-oren{
+    color: #FF9800;
+}
+
+.bg-dark-blue{
+    background-color: #010333;
+}
+.bg-blue{
+    background-color: #252E71;
+}
+.bg-grey-light{
+    background-color: #f9f9f9;
+}
+
+.no-decor{
+    text-decoration: none !important;
+}
+
+
+/* BUTTON MAIN STYLE */
+.btn-blue{
+    background-color: #252E71;
+    color: #fff;
+    font-family: “Open Sans”;
+    font-size: 1.8vw;
+    border-radius: 5px;
+}
+
+
+/* NAVBAR STYLE*/
+.navbar-ca{
+    box-shadow: 0px 0px 10px #c7cad1;
+    padding: 0px 6vw;
+    display: fixed; 
+    background-color: transparent;
+    transition: .5s;
+}
+.logo{
+    width: 150px;
+    float: left;
+}
+.nav-list{
+    margin: 0px 5% 0px auto;
+}
+
+.nav-list li{
+    padding: 4px 15px;
+}
+
+.nav-item a{
+    color: #252E71 !important;
+}
+.nav-item a:hover{
+    color: #FF9800 !important;
+}
+
+/* Dropdown pada menu PRODUK */
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    background-color: #252E71;
+}
+
+.dropdown-item:hover {
+    /* color: white !important; */
+    background-color: #2962ff;
+}
+
+.dropdown-menu a{
+    color: white !important;
+}
+.dropdown-menu a:hover{
+    color: white !important;
+}
+/* End dropdown menu PRODUK */
+
+
+/* content */
+
+/* PUBLICATION */
+
+.head-decoration{
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+}
+.container-sec-aware{
+    margin-top: 100px;
+}
+
+.img-pub{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.pub-menu{
+    border: 1px solid rgba(223,225,229,0);
+    height: 60px;
+    width: 900px;
+    position: relative;
+    top: -30px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+.submenu-pub{
+    border-right: 1px solid #dfe1e5;
+}
+
+
+/* FOOTER */
+.footer{
+    position: absolute;
+  bottom: 0px;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  /* height: 210px;  */
+  height: 240px;   
+  /* Vertically center the text there */
+  /*line-height: 60px; */
+  padding: 40px 80px;
+  }
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #FF9800;
+}
+
+
+/* page coming soon */
+
+.comming-soon p {
+    font-size:1em;
+    font-weight:100;
+    letter-spacing:0.5em;
+    color:#252E71;
+    display:inline-block;
+  }
+  
+  .bar {  
+    height:.3em;
+    width: 100%;
+    border-radius:10px;
+    background:transparent;
+    box-shadow:inset 0px 0px 8px #CFCFCF; 
+    overflow:hidden;
+    padding:5px;
+  }
+  
+  .progressbar {
+    height:inherit;  
+    border-radius:inherit;
+    width:0;
+    background:#252E71;
+    animation:load 3s linear infinite;
+    animation-delay:2s;
+    top: -2.5px;
+    position: relative;
+  }
+  
+  @keyframes load{
+    0%{
+        width:0%;
+    }
+    50%{
+        width:100%;
+    }
+    100% {
+        width:0%; 
+        float:right;
+    }
+  }
+  

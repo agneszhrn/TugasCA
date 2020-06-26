@@ -1,0 +1,17 @@
+.content{
+    margin-top: 150px;
+}
+.card-login{
+    width: 380px;
+}
+.btn-blue{
+    width: 100%;
+    font-size: 20px;
+    border-color: #252E71 !important;
+
+}
+.btn-blue:hover{
+    background-color: #ff9800;
+    border-color: #ff9800 !important;
+}
+
