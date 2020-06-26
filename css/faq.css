@@ -506,9 +506,10 @@ pre code {
 .container {
   width: 100%;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 87px;
 }
 
 @media (min-width: 576px) {
@@ -3091,20 +3092,24 @@ fieldset:disabled a.btn {
   font-weight: 400;
   color: #007bff;
   text-decoration: none;
+  cursor: default;
 }
 
 .btn-link:hover {
   color: #0056b3;
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: default;
 }
 
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: default;
 }
 
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
   pointer-events: none;
+  cursor: default;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -4960,6 +4965,13 @@ nav-link img:hover {
     display: inline-block;
     width: 100%;
   }
+}
+
+.accordion-faq{
+  background-color: #fff;
+  /*background-color: rgba(0,0,0,.03);*/
+  border: 2px solid rgba(0,0,0,.125);
+  /*border: 2px solid #50567F;*/
 }
 
 .accordion > .card {
@@ -10004,6 +10016,160 @@ button.bg-dark:focus {
 .text-center {
   text-align: center !important;
 }
+
+
+/* START CSS CONTENT FAQ */
+
+.cardMenu {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 5px #c7cad1; 
+  border-radius: 15px;
+  padding: 1rem !important;
+}
+
+.cardFAQ {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 0px 5px #c7cad1; 
+  border-radius: 15px;
+  padding: 3rem !important;
+}
+
+.cardFAQ > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.cardFAQ > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+
+.cardFAQ > .list-group:first-child {
+  border-top-width: 0;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.cardFAQ > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.btn-accor {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0px solid gainsboro;
+  background-color: white;
+  font-size: 17px;
+  line-height: 1.5;
+  border-radius: .15rem;
+  cursor: default;
+}
+
+.btn-accor:focus, .btn-accor:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-accor:active {
+  text-decoration: none;
+  outline: none;
+}
+
+.text-gray {
+  color: #575757; 
+  font-weight: normal;
+  text-align: center; 
+  font-size: 38px; 
+  padding-top: 50px; 
+  padding-bottom: 84px;
+}
+
+.text-gray img {
+  width: 83px;
+  margin-right: 10px;
+}
+
+.text-blue {
+  color: #252e71;
+  font-weight: normal;
+}
+
+.text-blue-light {
+  color: #2962ff;
+  font-weight: normal;
+}
+
+.text-orange {
+  color: #ff9800;
+  font-weight: normal;
+}
+
+.text-blueMenu {
+  color: #252e71;
+  font-weight: normal;
+}
+
+.text-blueMenu:hover {
+  color: #2962ff;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.text-orangeMenu {
+  color: #ff9800;
+  font-weight: normal;
+}
+
+.text-orangeMenu:hover {
+  color: #ff9800;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.list-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-itemactive {
+  border-bottom: 1px solid #ff9800;
+  padding: 0.5rem !important;
+}
+
+.menu-item {
+  border-bottom: 1px solid #e9ecef;
+  padding: 0.5rem !important;
+}
+
+/* END CSS CONTENT FAQ */
+
 
 @media (min-width: 576px) {
   .text-sm-left {
