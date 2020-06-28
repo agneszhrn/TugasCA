@@ -10171,6 +10171,50 @@ button.bg-dark:focus {
 /* END CSS CONTENT FAQ */
 
 
+/* START CSS FOOTER */
+
+.footer {
+  background-color: #010333;
+  color: #fff; 
+  font-size: 13px; 
+  font-weight: 450;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 82px;
+  padding-right: 45px;
+  margin-left: 5px;
+  margin-right: -5px;
+}
+
+.listfooter {
+  list-style-type: none; 
+  padding-inline-start: 0;
+}
+
+.text-whiteFooter {
+  color: white;
+  font-weight: normal;
+}
+
+.text-whiteFooter:hover {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+a.socialmedia{
+  text-decoration: none;
+  /*border-radius: 50%;*/
+  /*color: #fff;*/
+  margin: 3px;
+}
+
+.socialmedia path:hover{
+  fill: #FF9800;
+}
+
+/* END CSS FOOTER */
+
+
 @media (min-width: 576px) {
   .text-sm-left {
     text-align: left !important;
