@@ -4242,16 +4242,10 @@ input[type="button"].btn-block {
   font-weight: normal;
 }
 
-.text-blue:hover {
-  color: #2962ff;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-
 .text-blue-light {
   color: #2962ff;
   font-weight: normal;
+  font-family: "Open Sans";
 }
 
 .text-orange {
@@ -4259,8 +4253,22 @@ input[type="button"].btn-block {
   font-weight: normal;
 }
 
-blue-light-hover:hover {
-  color: #2962ff;
+.blue-hover:hover {
+  color: #252e71 !important;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.blue-light-hover:hover {
+  color: #2962ff !important;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.oren-hover:hover {
+  color: #ff9800 !important;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 /* END CSS TEXT */
@@ -4307,9 +4315,9 @@ blue-light-hover:hover {
   color: #252e71;
 }
 
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+/*.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: #ff9800;
-}
+}*/
 
 .dropdown-menu {
   position: absolute;
@@ -4451,6 +4459,13 @@ nav-link img:hover {
   padding-bottom: 16px;
 }
 
+.card-body p {
+  line-height: 20px;
+  white-space: nowrap;
+  color: #2962ff!important;
+  font-weight: lighter;
+}
+
 /* END CSS CONTENT PROGRAM */
 
 
@@ -4490,16 +4505,6 @@ nav-link img:hover {
 .listfooter {
   list-style-type: none; 
   padding-inline-start: 0;
-}
-
-.text-whiteFooter {
-  color: white;
-  font-weight: normal;
-}
-
-.text-whiteFooter:hover {
-  color: #ff9800;
-  text-decoration: none;
 }
 
 a.socialmedia{

@@ -10008,6 +10008,49 @@ button.bg-dark:focus {
   text-align: center !important;
 }
 
+/* START CSS TEXT */
+
+.text-blue {
+  color: #252e71;
+  font-weight: normal;
+}
+
+.text-blue-light {
+  color: #2962ff;
+  font-weight: normal;
+  font-family: "Open Sans";
+}
+
+.text-oren {
+  color: #ff9800;
+  font-weight: normal;
+}
+
+.text-white {
+  color: white;
+  font-weight: normal;
+}
+
+.blue-hover:hover {
+  color: #252e71 !important;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.blue-light-hover:hover {
+  color: #2962ff !important;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.oren-hover:hover {
+  color: #ff9800 !important;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* END CSS TEXT */
+
 
 /* START CSS CONTENT FAQ */
 
@@ -10107,47 +10150,6 @@ button.bg-dark:focus {
   margin-right: 10px;
 }
 
-.text-blue {
-  color: #252e71;
-  font-weight: normal;
-}
-
-.text-blue-light {
-  color: #2962ff;
-  font-weight: normal;
-}
-
-.text-orange {
-  color: #ff9800;
-  font-weight: normal;
-}
-
-.text-blueMenu {
-  color: #252e71;
-  font-weight: normal;
-}
-
-.text-blueMenu:hover {
-  color: #2962ff;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-blue-light-hover:hover {
-  color: #2962ff;
-}
-
-.text-orangeMenu {
-  color: #ff9800;
-  font-weight: normal;
-}
-
-.text-orangeMenu:hover {
-  color: #ff9800;
-  font-weight: normal;
-  text-decoration: none;
-}
-
 .list-menu {
   list-style: none;
   padding-left: 0;
@@ -10193,16 +10195,6 @@ blue-light-hover:hover {
 .listfooter {
   list-style-type: none; 
   padding-inline-start: 0;
-}
-
-.text-whiteFooter {
-  color: white;
-  font-weight: normal;
-}
-
-.text-whiteFooter:hover {
-  color: #ff9800;
-  text-decoration: none;
 }
 
 a.socialmedia{
