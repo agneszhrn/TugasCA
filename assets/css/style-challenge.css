@@ -1,0 +1,6 @@
+.bg-img-header {
+    background-image:url(https://www.cyberarmy.id/public/depan/img/Background/challenge.svg); 
+    background-repeat:no-repeat; 
+    background-position:center center; background-size:cover;
+    z-index:1;
+}
