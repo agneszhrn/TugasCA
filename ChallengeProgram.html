@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="csrf-token" content="QWBt5QzvsFc5zy1EbeIgP0loTxoQbAbdCj6Q3WBB">
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.cyberarmy.id/public/depan/img/icon_cyber.png">
+
+        <title> Challenge Program | CyberArmyID </title>
+
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="mainstyle.css">
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.cyberarmy.id/public/depan/img/logo_ca.png" width="150px">
+                </a>
+            </div>
+    
+            <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <div class="dropdown dropdown-produk">
+                            <a href="#" class="nav-link oren-hover" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUK</a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Vulnerability Disclosure Program</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Bug Bounty Program</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">CyberArmy Academy</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link oren-hover" href="#">PROGRAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link oren-hover" href="#">PUBLIKASI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link oren-hover" href="#">TENTANG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link oren-hover" href="#">MASUK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link oren-hover" href="#">DAFTAR</a>
+                    </li>
+                    <li class="nav-item dropdown" style="padding: 10px;">
+                        <a class="btn btn-outline-light nav-link" style="padding: .35rem 1rem;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span> ID </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#" onclick="langId()">Bahasa Indonesia (ID)</a>
+                            <a class="dropdown-item" href="#" onclick="langEn()">English (EN)</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+<!-- CHALLENGE PROGRAM -->
+    <div class="bg-img-header text-white" style="background-image:url(https://www.cyberarmy.id/public/depan/img/Background/challenge.svg); background-repeat:no-repeat; background-position:center center; background-size:cover; z-index:1">
+        <div style="padding: 18vh 10% 8% 10%">
+            <p class="font-header text-uppercase text-center" style="margin-bottom: 2.8vw">CHALLENGE PROGRAM</p>
+            <p class="font-sub-sub-header text-justify">
+                Challenge Program merupakan sebuah tantangan bagi Bughunter untuk menemukan kerentanan pada Program yang mereka ikuti. 
+                Challenge Program memberi kesempatan bagi para Bughunter untuk menemukan kerentanan dan melaporkannya dengan apresiasi 
+                berupa hadiah dan reputasi yang telah ditentukan. Melalui program ini, Bughunter juga akan mendapatkan portofolio dari 
+                kerentanan yang ditemukan sehingga membuka peluang untuk pekerjaan keamanan siber di masa yang akan datang.
+            </p>
+        </div>
+    </div>
+
+
+<!-- KEUNTUNGAN CHALLENGE PROGRAM ? -->
+        <div class="container">
+            <h3 class="text-center text-uppercase text-blue-light my-5" style="font-size: 3.5vh">KEUNTUNGAN CHALLENGE PROGRAM ?</h3>
+            <div class="row text-center mb-3">
+                <div class="col-md-4 mb-3">
+                    <div class="card cardCP p-3 h-100">
+                        <div class="px-3 py-4">
+                            <img style="max-width: 83px;" src="https://www.cyberarmy.id/public/depan/img/400/legal.png">
+                        </div>
+                        <p class="text-uppercase text-blue-light mb-0"><b>LEGAL ASESMEN</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card cardCP p-3 h-100">
+                        <div class="px-3 py-4">
+                            <img style="max-height: 83px;" src="https://www.cyberarmy.id/public/depan/img/400/reward.png">
+                        </div>
+                        <p class="text-uppercase text-blue-light mb-0"><b>PENGHARGAAN DAN REPUTASI</b></p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card cardCP p-3 h-100">
+                        <div class="px-3 py-4">
+                            <img style="max-width: 83px;" src="https://www.cyberarmy.id/public/depan/img/400/private.png">
+                        </div>
+                        <p class="text-uppercase text-blue-light mb-0"><b>JALUR UNDANGAN KHUSUS</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- Bagaimana Cara Kerjanya ? *Icon Hover Effect-8* -->
+        <div class="caraKerja p-5 text-blue">
+            <h3 class="text-center text-blue-light text-uppercase" style="font-size: 3.5vh">Bagaimana Cara Kerjanya ?</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <section id="set-8">  
+                            <div class="hi-icon-wrap hi-icon-effect-8" style="text-align: center; margin: 0 auto; padding: 2em 0 3em;">
+                                <div class="timeline-challenge-program">
+                                    <ul class="timeline timeline-horizontal">
+                                        <li class="timeline-item">
+                                            <div class="timeline-badge bg-dark-blue">1</div>
+                                            <div class="timeline-panel hi-icon"><img src="https://www.cyberarmy.id/public/depan/img/400/challenge.png" height="50px" style="margin-top: 20px"></div>
+                                            <p class="timeline-desc">Bughunter mencari kerentanan pada aplikasi / sistem / layanan</p>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <div class="timeline-badge bg-dark-blue">2</div>
+                                            <div class="timeline-panel hi-icon"><img src="https://www.cyberarmy.id/public/depan/img/400/004-mail.png" height="50px" style="margin-top: 20px"></div>
+                                            <p class="timeline-desc">Bughunter mengirimkan laporan kerentanan</p> 
+                                        </li>
+                                        <li class="timeline-item">
+                                            <div class="timeline-badge bg-dark-blue">3</div>
+                                            <div class="timeline-panel hi-icon"><img src="https://www.cyberarmy.id/public/depan/img/400/ca.png" height="50px" style="margin-top: 20px"></div>
+                                            <p class="timeline-desc">CyberArmy segera melakukan validasi laporan</p>
+                                        </li>
+                                        <li class="timeline-item">
+                                            <div class="timeline-badge bg-dark-blue">4</div>
+                                            <div class="timeline-panel hi-icon"><img src="https://www.cyberarmy.id/public/depan/img/400/reward.png" height="50px" style="margin-top: 20px"></div>
+                                            <p class="timeline-desc">Bughunter mendapatkan reward dan reputasi</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<!-- Footer -->
+    <footer class="footer bg-dark-blue">
+        <div class="row">
+            <div class="col">
+                <p class="text-uppercase"><b>Cyber Army Indonesia</b></p>
+                <ul style="list-style-type: none; padding-inline-start: 0;">
+                    <li><a href="#" class="isifooter">Tentang Kami</a></li>
+                    <li><a href="#" class="isifooter">Publikasi</a></li>
+                    <li><a href="#" class="isifooter">Mitra Kami</a></li>
+                    <li><a href="#" class="isifooter">Kontak</a></li>
+                    <li><a href="#" class="isifooter">Karir</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <p class="text-uppercase"><b>Layanan Perusahaan</b></p>
+                <ul style="list-style-type: none; padding-inline-start: 0;">
+                    <li><a href="#" class="isifooter">Vulnerability Disclosure Program</a></li>
+                    <li><a href="#" class="isifooter">Bug Bounty Program</a></li>
+                    <li><a href="#" class="isifooter">CyberArmy Academy</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <p class="text-uppercase"><b>Layanan Bughunter</b></p>
+                <ul style="list-style-type: none; padding-inline-start: 0;">
+                    <li><a href="#" class="isifooter">Challenge Program</a></li>
+                    <li><a href="#" class="isifooter">Program List</a></li>
+                    <li><a href="#" class="isifooter">Leaderboard</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <p class="text-uppercase"><b>Lainnya</b></p>
+                <ul style="list-style-type: none; padding-inline-start: 0;">
+                    <li><a href="#" class="isifooter">FAQ</a></li>
+                    <li><a href="#" class="isifooter">Syarat &amp; Ketentuan</a></li>
+                    <li><a href="#" class="isifooter">Kebijakan Privasi</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <p class="text-uppercase"><b>Media Sosial</b></p>
+            </div>
+        </div>    
+
+        <!-- Copyright -->
+        <div class="text-center copyright-footer"> © 2020 PT Global Inovasi Siber Indonesia - All Rights Reserved</div>
+
+    </footer>
+
+
+    <!-- jQuery, Popper.js, and JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    </body>
+</html>
