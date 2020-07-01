@@ -4,6 +4,62 @@ html {
     font-family: 'OpenSans' !important;
 }
 
+/* *************************** */
+/* ***** FONT SETTINGS *******/
+/* *************************** */
+
+/* FONT SIZING */
+.font-header {
+    font-size: 3.4vw;
+    font-style: bold;
+    color: #fff;
+}
+.font-11{
+    font-size: 11px;
+  }
+  .font-12{
+    font-size: 12px;
+  }
+  .font-13{
+    font-size: 13px;
+  }
+  .font-14{
+    font-size: 14px;
+  }
+  .font-15{
+    font-size: 15px;
+  }
+  .font-16{
+    font-size: 16px;
+  }
+  .font-17{
+    font-size: 17px;
+  }
+  .font-18{
+    font-size: 18px;
+  }
+  .font-19{
+    font-size: 19px;
+  }
+  .font-20{
+    font-size: 20px;
+  }
+
+.font-sub-header {
+    font-size: 2.2vw;
+    font-weight: 400;
+    color: #fff;
+}
+
+.font-sub-sub-header {
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #fff;
+}
+.text-bold{
+    font-weight: bold;
+}
+/* FONT COLORING */
 .text-blue{
     color: #252E71;
 }
@@ -13,7 +69,8 @@ html {
 .text-oren{
     color: #FF9800;
 }
-
+/* !! END OF FONT STYLING !! */
+/* ****************** */
 .bg-dark-blue{
     background-color: #010333;
 }
@@ -234,3 +291,11 @@ html {
   }
 
 
+/* PAGE BUG BOUNTY PROGRAM */
+.img-header{
+    background-image: url("https://www.cyberarmy.id/public/depan/img/Background/bounty.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
