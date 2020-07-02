@@ -146,6 +146,12 @@ html {
 .logo{
     width: 150px;
     float: left;
+    display: none;
+}
+.logo2{
+    width: 150px;
+    float: left;
+    display: block;
 }
 .nav-list{
     margin: 0px 5% 0px auto;
