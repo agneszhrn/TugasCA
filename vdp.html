@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="csrf-token" content="hqgadCMSXqGLmTfMu2jw8G7VHMFa2mUC7uZ7sxyZ"/>
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.cyberarmy.id/public/depan/img/icon_cyber.png">
+        <link rel="canonical" href="https://www.cyberarmy.id/"/>
+
+        <title>Vulnerability Disclosure Program | CyberArmyID</title>
+
+        <meta name="google-site-verification" content="nNQiOdrUAaO81Wd4ztZF-OKlj5JDzc3aKG0f0Ec7iu4"/>
+        <meta name="description" content="CyberArmyID merupakan sebuah platform koordinasi kerentanan pertama di Indonesia dan sebagai penyelenggara program bugbounty yang memberikan kesempatan Bug Hunter untuk mendapatkan apresiasi dari laporan kerentanan yang ditemukan dan memungkinkan Perusahaan dapat menemukan kerentanan yang variatif, tepat dan akurat. CyberArmyID juga berperan sebagai salah satu Pusat Koordinasi Kerentanan dari sektor publik yang hasilnya nanti akan dapat menjadi acuan Keamanan Siber dan Informasi yang terintegrasi di Indonesia.">
+
+        <!-- Google Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+        
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/vdp.css">
+    </head>
+
+    <body>
+        <!--START NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-ca">
+            <a class="navbar-brand" href="https://www.cyberarmy.id">
+                <img class="logo" src="https://www.cyberarmy.id/public/depan/img/logo_ca.png" alt="CA-white">
+                <img class="logo2" src="https://www.cyberarmy.id/public/depan/img/logo_ca1.png" alt="ca-black">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-scroll collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-list">
+                    <li class="nav-item active">
+                        <div class="dropdown dropdownA">
+                            <a class="linked-nav oren-hover" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUK</a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.cyberarmy.id/layanan/vdp">Vulnerability Disclosure Program</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://www.cyberarmy.id/layanan/company">Bug Bounty Program</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://www.cyberarmy.id/layanan/cda">CyberArmy Academy</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linked-nav oren-hover" href="https://www.cyberarmy.id/programs">PROGRAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linked-nav oren-hover" href="https://www.cyberarmy.id/publication">PUBLIKASI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linked-nav oren-hover" href="https://www.cyberarmy.id/tentang">TENTANG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linked-nav oren-hover" href="https://www.cyberarmy.id/login">MASUK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linked-nav oren-hover" href="https://www.cyberarmy.id/register">DAFTAR</a>
+                    </li>
+                    <li class="nav-item dropdown" style="padding: 10px;">
+                        <a class="btn btn-outline-light dropdown-toggle dropdown-toggle-lang linked-nav oren-hover" style="padding: .35rem 1rem;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg style="position: relative; top:-2px; margin-right: 4px;" aria-hidden="true" width="16px" focusable="false" data-prefix="fal" data-icon="globe" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 55 18.2 100.2 57.9 125.7 109.1zM336 256c0 22.9-1.6 44.2-4.3 64H164.3c-2.7-19.8-4.3-41.1-4.3-64s1.6-44.2 4.3-64h167.4c2.7 19.8 4.3 41.1 4.3 64zM248 40c26.9 0 61.4 44.1 78.1 120H169.9C186.6 84.1 221.1 40 248 40zm-67.5 10.9c-19 26.8-34.2 64.6-43.2 109.1H54.8c25.5-51.2 70.7-90.9 125.7-109.1zM32 256c0-22.3 3.4-43.8 9.7-64h90.5c-2.6 20.5-4.2 41.8-4.2 64s1.5 43.5 4.2 64H41.7c-6.3-20.2-9.7-41.7-9.7-64zm22.8 96h82.5c9 44.4 24.1 82.2 43.2 109.1-55-18.2-100.2-57.9-125.7-109.1zM248 472c-26.9 0-61.4-44.1-78.1-120h156.2c-16.7 75.9-51.2 120-78.1 120zm67.5-10.9c19-26.8 34.2-64.6 43.2-109.1h82.5c-25.5 51.2-70.7 90.9-125.7 109.1zM363.8 320c2.6-20.5 4.2-41.8 4.2-64s-1.5-43.5-4.2-64h90.5c6.3 20.2 9.7 41.7 9.7 64s-3.4 43.8-9.7 64h-90.5z"></path>
+                            </svg>
+                            <span>
+                                ID
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#" onclick="langId()">Bahasa Indonesia (ID)</a>
+                            <a class="dropdown-item" href="#" onclick="langEn()">English (EN)</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--END NAVBAR-->
+
+      
+        <!--START CONTENT HEADER-->
+        <div>
+            <div style="padding: 18vh 10% 1% 10%; background-color: #252E71;">
+                <p class="font-header text-white text-bold">Vulnerability Disclosure Program</p>
+                <div class="col-lg-7 col-md-8 col-sm-9 mb-5 mb-lg-0 px-0">
+                    <p class="font-sub-header text-white pb-4 pb-lg-0" style="font-size: 24px;margin-bottom:20px">
+                        Sebuah program yang memungkinkan Bughunter bekerjasama dengan organisasi untuk menemukan kerentanan pada suatu sistem secara berkesinambungan. VDP memberikan apresiasi berupa poin dan e-sertifikat kepada Bughunter.
+                    </p>
+                </div>
+            </div>
+            <div class="box"></div>
+            <div style="position: absolute;">
+                <img class="img-header-vdp" src="https://www.cyberarmy.id/public/depan/img/Background/vdp.png" data-pagespeed-url-hash="4194004635" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            </div>
+            <img src="https://www.cyberarmy.id/public/depan/img/Background/header-left-vdp.png" style="position: absolute; top: 120px; width: 100%;" data-pagespeed-url-hash="134209589" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        <!--END CONTENT HEADER-->
+    
+        <!--START CONTENT CARD KEUNTUNGAN-->
+        <div class="col-9 mx-auto mt-benefit-vdp">
+            <h3 class="text-center font-sub-header text-blue text-bold mx-2 mb-5" style="font-size: 4.5vh;">Keuntungan Vulnerability Disclosure Program</h3>
+            <div class="text-center mb-3 row">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card-vdp">
+                        <div class="mb-4">
+                            <img src="https://www.cyberarmy.id/public/depan/img/400/vdp-s2-1.png" style="max-height: 100px;">
+                        </div>
+                        <p class="text-blue mb-0">
+                            <b>Pengujian sistem berkesinambungan</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card-vdp">
+                        <div class="mb-4">
+                            <img src="https://www.cyberarmy.id/public/depan/img/400/anlasi.png" style="max-width: 100px;">
+                        </div>
+                        <p class="text-blue mb-0">
+                            <b>Hasil temuan kerentanan bervariatif</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card-vdp">
+                        <div class="mb-4">
+                            <img src="https://www.cyberarmy.id/public/depan/img/400/vdp-s2-3.png" style="margin-top: 10px;max-height: 90px;">
+                        </div>
+                        <p class="text-blue mb-0">
+                            <b>Mengurangi risiko dari kerentanan</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card-vdp">
+                        <div class="mb-4">
+                            <img src="https://www.cyberarmy.id/public/depan/img/400/vdp-s2-4.jpg" style="max-height: 100px;" data-pagespeed-url-hash="3437965830" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </div>
+                        <p class="text-blue mb-0">
+                            <b>Meningkatkan kolaborasi positif dengan Bughunter</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END CONTENT CARD KEUNTUNGAN-->
+    
+        <!--START CONTENT CARD CARA KERJA-->
+        <div class="text-center text-blue p-5">
+            <h3 class="text-blue text-bold mt-5" style="font-size: 4.5vh">Bagaimana Cara Kerjanya ?</h3>
+            <p class="text-blue mb-5">Berikut merupakan proses Vulnerability Disclosure Program dari Bughunter sampai ke Pemilik Sistem</p>
+            <div class="col-10 mx-auto" id="cara-kerja-web">
+                <div class="row mb-4">
+                    <div class="col-4">
+                        <div class="font-20 text-white text-bold mx-auto card-oren">Bughunter</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="font-20 text-white text-bold mx-auto card-blue">CyberArmyID</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="font-20 text-white text-bold mx-auto card-blue-light">Pemilik Sistem</div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-4">
+                        <div class="card card-border-oren">
+                            <div class="row my-auto">
+                                <div class="col-2 pr-0 text-center my-auto" style="font-size:40px;">1</div>
+                                <div class="col-10 my-auto text-left mb-0">
+                                    <p class="mb-0">Bughunter mencari kerentanan pada aplikasi di platform CyberArmyID</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-border-oren">
+                            <div class="row my-auto">
+                                <div class="col-2 pr-0 text-center my-auto" style="font-size:40px;">2</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0">Bughunter mengirimkan laporan kerentanan ke CyberArmyID</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-blank">
+                            <div class="row">
+                                <div class="col-2 pr-0 text-white text-center my-auto" style="font-size:40px;">&nbsp;</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-blank">
+                            <div class="row">
+                                <div class="col-2 pr-0 text-white text-center my-auto" style="font-size:40px;">&nbsp;</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-border-oren">
+                            <div class="row my-auto">
+                                <div class="col-2 pr-0 text-center my-auto" style="font-size:40px;">9</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0">Bughunter mendapatkan apresiasi dan reputasi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-blank">
+                            <div class="row">
+                                <div class="col-2 pr-0 text-white text-center my-auto" style="font-size:40px;">&nbsp;</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-border-blue">
+                            <div class="row my-auto">
+                                <div class="col-2 pr-0 text-center my-auto" style="font-size:40px;">3</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0">CyberArmyID segera melakukan validasi laporan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-border-blue">
+                            <div class="row my-auto">
+                                <div class="col-2 pr-0 text-center my-auto" style="font-size:40px;">4</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0">CyberArmyID menyeleksi temuan yang kritis dan memberikan rekomendasi</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-blank">
+                            <div class="row">
+                                <div class="col-2 pr-0 text-white text-center my-auto" style="font-size:40px;">&nbsp;</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-border-blue">
+                            <div class="row my-auto">
+                                <div class="col-2 pr-0 text-center my-auto" style="font-size:40px;">8</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0">CyberArmyID memberikan apresiasi berupa poin dan e-sertifikat kepada Bughunter</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card card-blank">
+                            <div class="row">
+                                <div class="col-2 pr-0 text-white text-center my-auto" style="font-size:40px;">&nbsp;</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-blank">
+                            <div class="row">
+                                <div class="col-2 pr-0 text-white text-center my-auto" style="font-size:40px;">&nbsp;</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-border-blue-light">
+                            <div class="row my-auto">
+                                <div class="col-2 pr-0 text-center my-auto" style="font-size:40px;">5</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0">Pemilik sistem menerima Laporan dan Rekomendasi dari tim CyberArmyID</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-border-blue-light">
+                            <div class="row my-auto">
+                                <div class="col-2 pr-0 text-center my-auto" style="font-size:40px;">6</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0">Pemilik sistem melakukan perbaikan celah keamanan yang dilaporkan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-border-blue-light">
+                            <div class="row my-auto">
+                                <div class="col-2 pr-0 text-center my-auto" style="font-size:40px;">7</div>
+                                <div class="col-10 my-auto text-left">
+                                    <p class="mb-0">Pemilik sistem memperbaharui status kerentanan yang sudah diperbaiki</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END CONTENT CARD CARA KERJA-->
+    
+        <!--START CONTENT PARALLAX-->    
+        <div class="parallax-vdp last-content">
+            <div class="parallax-text-vdp text-center text-uppercase">
+                <p class="px-2">Uji Keamanan Aplikasi Bisnis Anda Segera!</p>
+                <a href="https://wa.me/6281293931337?text=Saya%20tertarik%20dengan%20Vulnerability%20Disclosure%20Program%20CyberArmy.%20Mohon%20info%20selanjutnya">
+                    <button class="btn btn-oren font-20 text-bold" style="padding: 10px 80px">Daftar Sekarang</button>
+                </a>
+            </div>
+        </div>
+        <!--END CONTENT PARALLAX-->
+
+
+        <!--START FOOTER-->
+        <footer class="footer bg-dark-blue mx-auto text-white font-13" style=" font-weight: 450;">
+            <div class="mx-auto pt-5 pb-3 px-4 footer-grid col-11">
+                <div class="cols">
+                    <p><b>CYBER ARMY INDONESIA</b></p>
+                    <ul  style="list-style-type: none; padding-inline-start: 0;">
+                        <li><a href="https://www.cyberarmy.id/tentang" class="text-white oren-hover font-12">Tentang Kami</a></li>
+                        <li><a href="https://www.cyberarmy.id/publication" class="text-white oren-hover font-12">Publikasi</a></li>
+                        <li><a href="https://www.cyberarmy.id#mitra" class="text-white oren-hover font-12">Mitra Kami</a></li>
+                        <li><a href="https://www.cyberarmy.id/tentang#kontak" class="text-white oren-hover font-12">Kontak</a></li>
+                        <li><a href="https://www.cyberarmy.id/karir" class="text-white oren-hover font-12">Karir</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <p><b>LAYANAN PERUSAHAAN</b></p>
+                    <ul style="list-style-type: none; padding-inline-start: 0;">
+                        <li><a href="https://www.cyberarmy.id/layanan/vdp" class="text-white oren-hover font-12">Vulnerability Disclosure Program</a></li>
+                        <li><a href="https://www.cyberarmy.id/layanan/company#managedByCyberarmy" class="text-white oren-hover font-12">Bug Bounty Program</a></li>
+                        <li><a href="https://www.cyberarmy.id/layanan/cda" class="text-white oren-hover font-12">CyberArmy Academy</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <p><b>LAYANAN BUGHUNTER</b></p>
+                    <ul style="list-style-type: none; padding-inline-start: 0;">
+                        <li><a href="https://www.cyberarmy.id/layanan/bughunter" class="text-white oren-hover font-12">Challenge Program</a></li>
+                        <li><a href="https://www.cyberarmy.id/programs" class="text-white oren-hover font-12">Program List</a></li>
+                        <li><a href="https://www.cyberarmy.id/leaderboard" class="text-white oren-hover font-12">Leaderboard</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <p><b>LAINNYA</b></p>
+                    <ul style="list-style-type: none; padding-inline-start: 0;">
+                        <li><a href="https://www.cyberarmy.id/faq" class="text-white oren-hover font-12">FAQ</a></li>
+                        <li><a href="https://www.cyberarmy.id/s&amp;k" class="text-white oren-hover font-12">Syarat &amp; Ketentuan</a></li>
+                        <li><a href="https://www.cyberarmy.id/kebijakan-pr" class="text-white oren-hover font-12">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <p><b>MEDIA SOSIAL</b></p>
+                    <div>
+                        <a class="oren-hover"><i class="fa fa-twitter-square fa-2x mr-2" aria-hidden="true"></i></a>
+                        <a class="oren-hover"><i class="fa fa-facebook-square fa-2x mr-2" aria-hidden="true"></i></a>
+                        <a class="oren-hover"><i class="fa fa-linkedin-square fa-2x mr-2" aria-hidden="true"></i></a>
+                        <a class="oren-hover"><i class="fa fa-instagram fa-2x mr-2" aria-hidden="true"></i></a>
+                        <a class="oren-hover"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-white copyright-footer mt-0 mb-0 pb-4 px-5"> &copy; 2020 PT Global Inovasi Siber Indonesia - All Rights Reserved</div>
+        </footer>
+        <!-- END FOOTER -->
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://www.cyberarmy.id/public/front/lib/jquery/jquery.min.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://www.cyberarmy.id/public/back/js/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://www.cyberarmy.id/public/back/js/bootstrap.min.js"></script>
+        <!-- Font Awesome JS -->
+        <script defer src="https://www.cyberarmy.id/public/back/js/solid.js"></script>
+  
+        <!-- Scrolling Navbar -->
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>
