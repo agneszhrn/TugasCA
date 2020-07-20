@@ -10581,7 +10581,7 @@ font.sub-header {
   padding-bottom: 1rem !important;
 }
   
-.card-abu{
+.card-grey{
   background-color: #f9f9f9;
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
@@ -10644,34 +10644,23 @@ font.sub-header {
 /* START CSS CONTENT DETAIL PROGRAM */
 
 .logoCA {
-  float: left; border:2px solid #fff;
-  border-radius:5px;height:120px;
-  max-width:120px;width:100%;
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-  background-color:#fff;
-  /* border-color:#cfcfcf; */
-  margin-left: 165px;
-  margin-right: 30px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  height: 120px;
+  max-width: 120px;
+  float: right;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #fff;
+  border-color: #cfcfcf;
 }
 
-.logoCA2 {
-  border-radius:5px;height:120px;
-  max-width:120px;width:100%;
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-  background-color:#fff;
-  /* border-color:#cfcfcf; */
-  margin-left: 165px;
-  margin-right: 30px;
-}
-
-.gambarlogo {
+/* .gambarlogo {
   margin-right: auto;
   padding-left: 50%;
-}
+} */
 
 .row-detailprogram1 {
   display: -ms-flexbox;
@@ -10731,21 +10720,60 @@ font.sub-header {
   }
 }
 
-/* END CSS CONTENT DETAIL PROGRAM */
+@media screen and (max-width: 991px) {
+  .logoCA {
+    float: none;
+    margin: 0px 43% 0px 43%;
+  }
 
-/* @media screen and (max-width: 991px) {
-  .gambarlogo {
-    margin-left: auto;
-    margin-right: auto;
+  .font-profile {
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 1050px) {
-  .gambarlogo {
-    margin-left: 150px;
+@media screen and (max-width: 835px) {
+  .logoCA {
+    float: none;
+    margin: 0px 41% 0px 41%;
   }
-} */
+}
 
+@media screen and (max-width: 655px) {
+  .logoCA {
+    float: none;
+    margin: 0px 40% 0px 40%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .logoCA {
+    float: none;
+    margin: 0px 38% 0px 38%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .logoCA {
+    float: none;
+    margin: 0px 36% 0px 36%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logoCA {
+    float: none;
+    margin: 0px 33% 0px 33%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logoCA {
+    float: none;
+    margin: 0px 29% 0px 29%;
+  }
+}
+
+/* END CSS CONTENT DETAIL PROGRAM */
 
 
 /* START CSS FOOTER */
